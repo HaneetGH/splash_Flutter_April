@@ -118,7 +118,7 @@ class Otp_enterState extends State<Otp_enter>{
                   ),
 
 
-                 Container(   margin: EdgeInsets.only(left: 20, right: 20, top: 5,bottom: 300),
+                 Container(   margin: EdgeInsets.only(left: 20, right: 20, top: 5,bottom: 200),
                    child:  Row(mainAxisAlignment: MainAxisAlignment.center,
                      children: [
                        Text("Didn't receive code ? "),

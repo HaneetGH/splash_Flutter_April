@@ -111,7 +111,7 @@ class StartedState extends State<Started>{
                           .push(MaterialPageRoute(builder: (context) => Home()));
                     },
                     child:  Container(
-                      margin: EdgeInsets.only(left: 20, right: 20, top: 5,bottom: 300),
+                      margin: EdgeInsets.only(left: 20, right: 20, top: 5,bottom: 250),
                       height: 60,
                    //   margin: EdgeInsets.only(left: 20, right: 20, top: 5),
                       padding: EdgeInsets.all(10),

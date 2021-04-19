@@ -84,7 +84,7 @@ child:Column(
         },
         child: Container(
           height: 80,
-          margin: EdgeInsets.only(left: 20, right: 20, top: 5,bottom: 400),
+          margin: EdgeInsets.only(left: 20, right: 20, top: 5,bottom: 300),
           padding: EdgeInsets.all(10),
           color: Colors.transparent,
           child: Container(
