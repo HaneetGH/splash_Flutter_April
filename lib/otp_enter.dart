@@ -81,11 +81,13 @@ class Otp_enterState extends State<Otp_enter>{
                     pinTextAnimatedSwitcherTransition:
                     ProvidedPinBoxTextAnimation.scalingTransition,
 //                    pinBoxColor: Colors.green[100],
+
                     pinTextAnimatedSwitcherDuration: Duration(milliseconds: 300),
 //                    highlightAnimation: true,
                     highlightAnimationBeginColor: Colors.black,
                     highlightAnimationEndColor: Colors.white12,
                     keyboardType: TextInputType.number,
+                    pinBoxRadius: 10,
                   ),
                   SizedBox(
                     height: 20,
