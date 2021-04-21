@@ -55,9 +55,13 @@ class HomeState extends State<Home> {
                       )
                       ],
                     ),
-                   Container(margin:EdgeInsets.only(left: 140),child: Icon(Icons.notifications,color: Colors.red,),),
-                    Container(margin:EdgeInsets.only(left: 10,right: 2),child: Icon(Icons.favorite_border_outlined,color: Colors.red,),),
-                    Container(margin:EdgeInsets.only(left: 10,right: 1),child: Icon(Icons.qr_code_outlined,color: Colors.red,),),
+                   Container(margin:EdgeInsets.only(left: 140),child:
+                   Icon(Icons.notifications,color: Colors.red,),),
+                    Container(margin:EdgeInsets.only(left: 10,right: 2),
+                      child: Icon(Icons.favorite_border_outlined,color: Colors.red,),),
+                    Container(margin:EdgeInsets.only(left: 10,right: 1),
+
+                      child:Image.asset("assets/qr.png"),width:32,height:32,),
                   ],
 
                 ),
