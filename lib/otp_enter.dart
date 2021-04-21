@@ -20,6 +20,7 @@ class Otp_enterState extends State<Otp_enter>{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+        resizeToAvoidBottomInset: false,
         backgroundColor: Colors.white,
         body: Container(
             decoration: BoxDecoration(
@@ -53,7 +54,7 @@ class Otp_enterState extends State<Otp_enter>{
                     height: 20,
                   ),
                   PinCodeTextField(
-                    autofocus: true,
+                    autofocus: false,
                     //  controller: controller,
                     hideCharacter: false,
                     highlight: true,
@@ -118,7 +119,7 @@ class Otp_enterState extends State<Otp_enter>{
                   ),
 
 
-                 Container(   margin: EdgeInsets.only(left: 20, right: 20, top: 5,bottom: 200),
+                 Container(   margin: EdgeInsets.only(left: 20, right: 20, top: 5,bottom: 300),
                    child:  Row(mainAxisAlignment: MainAxisAlignment.center,
                      children: [
                        Text("Didn't receive code ? "),

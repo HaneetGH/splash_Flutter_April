@@ -16,6 +16,7 @@ class HomeState extends State<Home> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
@@ -109,23 +110,23 @@ class HomeState extends State<Home> {
               Center(
                 child: Container(
                   height: 150.0,
-                  width: 350.0,
+                  width: 400.0,
                   child: Carousel(
                     boxFit: BoxFit.cover,
                     autoplay: true,
                     animationCurve: Curves.fastOutSlowIn,
                     animationDuration: Duration(milliseconds: 1000),
-                    dotSize: 6.0,
+                    dotSize: 5.0,
                     dotIncreasedColor: Colors.black,
-                    dotBgColor: Colors.white,
-                    dotPosition: DotPosition.topRight,
+                    dotBgColor: Colors.transparent,
+                    dotPosition: DotPosition.bottomCenter,
                     dotVerticalPadding: 10.0,
                     showIndicator: true,
                     indicatorBgPadding: 7.0,
                     images: [
-                      NetworkImage('https://cdn-images-1.medium.com/max/2000/1*GqdzzfB_BHorv7V2NV7Jgg.jpeg'),
-                      NetworkImage('https://cdn-images-1.medium.com/max/2000/1*wnIEgP1gNMrK5gZU7QS0-A.jpeg'),
-                      NetworkImage('https://cdn-images-1.medium.com/max/2000/1*wnIEgP1gNMrK5gZU7QS0-A.jpeg'),
+                     Image.asset('assets/banner2.png',),
+                      Image.asset('assets/subway.png'),
+                      Image.asset('assets/domino.jpg'),
                     ],
                   ),
                 ),
@@ -133,14 +134,14 @@ class HomeState extends State<Home> {
 
               Container(
                 color: Colors.white,
-                margin: EdgeInsets.only(left: 5,right: 5,top: 20),
+                margin: EdgeInsets.only(left: 15,right: 5,top: 20),
                 child: Card(
                   color: Colors.white,
-                  elevation: 5,
+                  elevation: 0,
                   child: Row(
                     children: [
                       Icon(
-                        Icons.near_me,
+                        Icons.near_me,size: 20,
                         color: Colors.red,
                       ),
                       Text("Near By Stores",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
